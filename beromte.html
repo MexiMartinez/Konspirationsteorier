@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <link rel="stylesheet" href="styles-beromte.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berømte Konspirationteorier</title>
+</head>
+
+<body>
+    <header>
+        <h1>Berømte om Konspirationsteorier</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="historie.html">Historie om konspirationsteorier</a></li>
+            <li><a href="typer.html">Typer af konspirationsteorier</a></li>
+            <li><a href="tiltaler.html">Hvorfor tiltaler konspirationteorier mennesker</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Forskellige Kategorier</h2>
+        <div class="categories">
+            <div class="category">
+                <h3>Politiske Konspirationteorier</h3>
+                <p>Klik på knappen for at se et link, hvor du kan læse om politiske konspirationsteorier som "The Assassination of President John f. Kennedy," "9/11 Attacks," og "The Moon Landing."</p>
+                <button type="button" id="myBtn1" onclick="myFunction()">Click it</button>
+                <div class="linkContainer" style="display: none"></div>
+            </div>
+            <div class="category">
+                <h3>Historiske Konspirationteorier</h3>
+                <p>Klik på knappen for at se et link, hvor du kan læse om historiske konspirationsteorier, som Dronning Elizabeth I der blev erstattet af en dreng i sin ungdom, og om John Wilkes Booth handlede alene ved at myrde Abraham Lincoln.</p>
+                <button type="button" id="myBtn2" onclick="myFunction()">Click it</button>
+                <div class="linkContainer" style="display: none"></div>
+            </div>
+            <div class="category">
+                <h3>UFO og udenjordisk konspiration</h3>
+                <p>Klik på knappen for at se et link, hvor du kan læse om UFO og udenjordisk konspiration</p>
+                <button type="button" id="myBtn3" onclick="myFunction()">Click it</button>
+            </div>
+            <div class="category">
+                <h3>Hemmelighedsfulde organisationer</h3>
+                <p>Klik på knappen for at se et link, hvor du kan læse om hemmelighedsfulde organisationer, som Illuminati og Frimuer</p>
+                <button type="button" id="myBtn4" onclick="myFunction()">Click it</button>
+            </div>
+        </div>
+        <script>
+        document.getElementById("myBtn1").onclick = function() {
+            let text = "Politiske Konspirationsteorier";
+            let results = text.link("https://www.history.com/news/6-infamous-political-conspiracies");
+            document.getElementById("myBtn1").innerHTML = results;
+        };
+
+        document.getElementById("myBtn2").onclick = function() {
+            let text = "Historiske Konspirationsteorier";
+            let results = text.link("https://www.watchmojo.com/articles/top-10-conspiracy-theories-about-historical-figures");
+            document.getElementById("myBtn2").innerHTML = results;
+        };
+
+        document.getElementById("myBtn3").onclick = function() {
+            let text = "UFO og udenjordisk konspiration";
+            let results = text.link("https://www.discovermagazine.com/the-sciences/fact-or-fiction-what-is-the-truth-behind-alien-conspiracy-theories");
+            document.getElementById("myBtn3").innerHTML = results;
+        };
+
+        document.getElementById("myBtn4").onclick = function() {
+            let text = "Hemmelighedsfulde organisationer";
+            let results = text.link("https://www.history.com/news/secret-societies-freemasons-knights-templar");
+            document.getElementById("myBtn4").innerHTML = results;
+        };
+    </script>
+    </section>
+    <footer>
+        <p>&copy; 2024 Konspirationsteorier - Udforskning af Skjulte Sandheder</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="tiltaler-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvorfor konspirationsteorier tiltaler mennesker</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hvorfor konspirationsteorier tiltaler mennesker</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="historie.html">Historie om konspirationsteorier</a></li>
+            <li><a href="typer.html">Typer af Konspirationsteorier</a></li>
+            <li><a href="beromte.html">Berømte konspirationsteorier</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="category">
+            <h2>Psykologiske årsager</h2>
+            <p>Konspirationsteorier tiltaler mennesker, fordi de tilbyder simple forklaringer på komplekse begivenheder, der giver en følelse af kontrol i en verden, der ofte føles kaotisk. Mennesker er også tilbøjelige til kognitive biases, hvor vi søger information, der bekræfter vores eksisterende overbevisninger, hvilket forstærker troen på konspirationsteorier. Følelsen af at være en del af en "oplyst" gruppe kan skabe en stærk identitetsfølelse og social sammenhørighed.</p>
+        </div>
+    </section>
+    <section>
+        <div class="category">
+            <h2>Mistrust og følelser</h2>
+            <p>Mange konspirationsteorier bygger på en dyb mistillid til autoriteter som regeringer og store organisationer. Når institutioner mister tillid, kan mennesker være mere tilbøjelige til at tro på skjulte dagsordener. Samtidig appellerer konspirationsteorier til stærke følelser som frygt og vrede, hvilket gør dem følelsesmæssigt tiltrækkende og sværere at afvise.</p>
+        </div>
+    </section>
+    <section>
+        <div class="category">
+            <h2>Akademisk reference</h2>
+            <p>Klik på knappen for at se et link, hvor du kan læse en akademisk reference, omkring hvorfor konspirationsteorier tiltaler menneskersom</p>
+            <button type="button" id="myBtn1" onclick="myFunction()">Click it</button>
+            <div class="linkContainer" style="display: none"></div>
+            <h2>Flere workshopshjemmesider</h2>
+            <p>Klik på knappen for at se flere workshopshjemmesider</p>
+            <button type="button" id="myBtn2" onclick="myFunction()">Click it</button>
+            <div class="linkContainer" style="display: none"></div>
+        </div>
+        <script>
+            document.getElementById("myBtn1").onclick = function() {
+                let text = "Akademisk reference";
+                let results = text.link("https://www.apa.org/news/podcasts/speaking-of-psychology/conspiracy-theories");
+                document.getElementById("myBtn1").innerHTML = results;
+            };
+            document.getElementById("myBtn2").onclick = function() {
+                let text = "baeredygtig stil";
+                let results = text.link("https://ilaydademirr.github.io/baeredygtig_stil/");
+                document.getElementById("myBtn2").innerHTML = results;
+            };
+        </script>
+    </section>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Konspirationsteorier - En dybdegående udforskning</p>
+</footer>
+
+</html>

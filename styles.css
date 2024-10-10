@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "open sans¨;  
+    line-height: 1.6;
+    background-color:darkgoldenrod;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img.logo {
+    width: 100px;  
+    height: auto;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 5em;
+    color:floralwhite;
+}
+
+
+header {
+    background-color:black;
+    color:floralwhite; 
+    padding: 20px;
+    text-align: left; 
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
+    color:floralwhite;
+}
+
+
+nav {
+    background-color:black;
+    color: darkorange;
+    text-align:center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color:darkgoldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color:floralwhite;
+}
+
+
+section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:floralwhite;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:black;
+}
+
+section p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-color:black;
+    color:darkgoldenrod;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+

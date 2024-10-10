@@ -1,0 +1,107 @@
+< !DOCTYPE html > {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    line-height: 1.6;
+    background-color: darkgoldenrod;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: floralwhite;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: floralwhite;
+}
+
+section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: floralwhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    background-color: floralwhite;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.category h3 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 1em;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
